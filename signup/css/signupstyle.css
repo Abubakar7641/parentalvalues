@@ -1,0 +1,261 @@
+/*
+   Style sheet for sign up page
+*/
+
+.background {
+    
+    background-image: url("../img/back.png");
+    background-repeat: no-repeat;
+
+}
+.container img {
+    width: 14%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+
+}
+.main{
+    text-align: center;
+    width: 70%;
+    margin: 3% auto 0;
+
+}
+.signup-top{
+    float: none;
+    width: 70%;
+    margin-left: 16%;
+    margin-top: -3%;
+    padding: 13em;
+    background: #fff;
+}
+.title{
+    text-transform: uppercase;
+    margin-top: -50%;
+    text-align: center;
+    font-family: myFirstFont;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(43, 106, 168);
+
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(BebasNeueRegular.otf);
+}
+.parent_name{
+    font-family: myFirstFont;
+    color: black;
+    float: left;
+    margin-top: -25%;
+    margin-left: 27%;
+    display: inline-block;
+
+}
+.name{
+
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    background: transparent;
+    width: 130%;
+}
+.country_name{
+    font-family: myFirstFont;
+    color: black;
+    float: left;
+    margin-top: -25%;
+    margin-left: 54%;
+}
+.c_name{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    background: transparent;
+    width: 90%;
+    margin-top: 2%;
+}
+.email{
+    margin-top: -19%;
+}
+.country{
+    margin-top: -19%;
+}
+.phone{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    background: transparent;
+    width: 140%;
+}
+.password{
+    margin-top: -13%;
+}
+.c_password{
+    margin-top: -13%;
+}
+/* Check Box style */
+
+.control--checkbox{
+    font-family: myFirstFont;
+    display: block;
+    position: relative;
+    padding-left: 30%;
+    margin-top: -7%;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.control--checkbox input{
+    position: absolute;
+    opacity: 0;
+}
+.tick{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    margin-left: 27%;
+    margin-top: -.25%;
+    background-color: #eee;
+    border: 1px solid black;
+
+}
+.control--checkbox:hover input ~ .tick{
+    background-color: #ccc;
+}
+.control--checkbox input:checked ~ .tick{
+    background-color: rgb(254, 194, 38);
+}
+
+.tick:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.control--checkbox input:checked ~ .tick:after {
+    display: block;
+}
+
+.control--checkbox .tick:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+.button{
+    font-family: myFirstFont;
+    margin-left: 28%;
+    margin-top: 1%;
+    color: white;
+    background-color: rgb(254, 194, 38);
+    width: 46%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 5.5px;
+
+
+}
+.signupin{
+    font-family: myFirstFont;
+    font-size: 15px;
+    margin-left: 40%;
+    text-transform: uppercase;
+    margin-top: 1%;
+    color: white;
+}
+
+.lnk{
+    border: none;
+    color: black;
+    text-decoration: none;
+
+
+}
+.lnk:hover{
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+.lnk:focus{
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+/* Download App style */
+
+#apple{
+    float: left;
+    position: absolute;
+    display: inline;
+    width: 13%;
+    margin-left: 37%;
+}
+#playstore{
+    float: right;
+    position: absolute;
+    display: inline;
+    width: 13%;
+    margin-left: 53%;
+} 
+
+
+/* Footer Style code */
+
+.footer{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5.5%;
+    padding: 4.5px;
+}
+.copyright{
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+.copyright:hover{
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+.copyright:focus{
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+

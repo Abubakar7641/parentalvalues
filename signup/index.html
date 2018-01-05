@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/signupstyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Java script -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--Java script for country list -->
+    <script type= "text/javascript" src="js/countries.js"></script>
+
+    <script language="javascript">
+        populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+        populateCountries("country2");
+        populateCountries("country2");
+    </script>
+
+
+</head>
+<body class="background">
+
+
+       <!-- Image set div -->
+       <div class="container">
+          <img src="img/logo.png" alt="logo" class="img-responsive">
+       </div>
+
+       <!-- form code -->
+       <div class="main">
+           <div class="signup-top">
+               <h1 class="title">Create an account</h1>
+
+           </div>
+       </div>
+
+
+       <!-- Form of sign up -->
+       <form method="post" action="#" class="container" id="needs-validation" role="form">
+           <div class="row">
+
+               <div class="parent_name">
+               <label>FULL NAME</label>
+               <input class="name" type="text" name="PARENT_NAME" id="PARENT_NAME" required>
+               </div>
+
+               <div class="country_name">
+                   <label>COUNTRY NAME</label>
+                   <select class="c_name" id="country" name ="country"></select>
+               </div>
+
+               <div class="parent_name email">
+                   <label>EMAIL ADDRESS</label>
+                   <input class="name e_mail" type="email" name="emaail" id="email" required>
+               </div>
+
+               <div class="country_name country">
+                   <label>PHONE NUMBER</label>
+                   <input class="phone" type="tel" name="phone" id="phone" required>
+               </div>
+
+               <div class="parent_name password">
+                   <label>PASSWORD</label>
+                   <input class="name password1" type="password" name="password" id="password" required>
+               </div>
+
+               <div class="country_name c_password">
+                   <label>CONFIRM PASSWORD</label>
+                   <input class="phone" type="password" name="c_password" id="c_password" required>
+               </div>
+
+               <label class="control--checkbox">I AGREE PARENTAL VALUES TERM & CONDITIONS
+                   <input type="checkbox">
+                   <span class="tick"></span>
+               </label>
+
+               <button class="button" name="button" id="button" type="submit">SIGN UP</button>
+
+           </div>
+       </form>
+       <!-- End of Sign up form -->
+
+       <!-- Signin linked link -->
+         <div class="signupin">
+           <p>Alread have account ? <a class="lnk" href="#">login here</a></p>
+         </div>
+       <!-- Signin linked link End -->
+
+       <!-- Download link from playstore and iphone store -->
+
+       <div class="download_app">
+           <a id="apple" href="#">
+           <img src="img/apple.png" alt="Apple store" class="img-responsive">
+           </a>
+           <a id="playstore" href="#">
+           <img src="img/playstore.png" alt="Playstore" class="img-responsive">
+           </a>
+
+
+       </div>
+
+
+
+       <!-- End of section -->
+
+       <!-- Footer of the sign up page -->
+       <footer class="footer">
+         2017 Copyright &copy; - <a href="#" class="copyright">Parental values</a>
+       </footer>
+       <!-- Signup Footer End -->
+
+
+
+
+       <script language="javascript">
+           populateCountries("country", "state");
+       </script>
+
+
+</body>
+</html>
